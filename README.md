@@ -1,5 +1,5 @@
 # API Documentation for Next In Line
-Auto-generated documentation is available at https://api.nextinline.io/docs
+Auto-generated documentation is available at http://api.nextinline.io/docs
 
 ## Authentication
 Use vendor auth when creating organizations.  Use org auth if you want to act as an org (and not a user).
