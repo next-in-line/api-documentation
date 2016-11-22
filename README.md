@@ -34,6 +34,10 @@ x-id: org-f1594bd7-7999-4dd9-8007-394dcb7c4af3
 ```
 
 (response is an array of lines for that organization)
+
+## Searching
+All models allow for direct attributes to be searched in a `value == lookup` sort of way; e.g., `/users?email=johndoe@example.com`
+
 # Users
 ## Creating
 When creating a user, an initial password is required, even though the field is not actually required.  In the POST to `/users`, make sure to include `password: "somepassword"`
@@ -67,7 +71,7 @@ This is a plain object; however, there's some custom information that can be use
 
 Each link will have `?token=TOKEN appended` (or `&token=TOKEN` if there are already query parameters in the link).  The token can be interacted with via `/tokens` endpoints to do the appropriate thing.
 
-# Profiles Model
+# Profiles
 ## profile.information
 This is where the bulk of information stored in a profile will be kept.  Some probable information would be:
 
@@ -79,3 +83,6 @@ This is where the bulk of information stored in a profile will be kept.  Some pr
 etc.
 
 Because the Next In Line API is not specific to any business type, this data may change significantly.
+
+### Searching
+You can search the `.information` attribute using query parameters, e.g.: `/profiles?information.name=John Doe`
