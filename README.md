@@ -5,3 +5,4 @@
 ## [Organizations](documentation/organizations.md)
 ## [Profiles](documentation/profiles.md)
 ## [Tokens](documentation/tokens.md)
+## [Widgets](documentation/widgets.md)
