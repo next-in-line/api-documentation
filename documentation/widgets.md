@@ -27,7 +27,7 @@ POST to `/tokens` using the `x-user-token` header with the `.apiToken` of the us
 The API will return a token object that can be used to show and organization widget and do things such as reserve or subscribe... depending on the widget.
 
 ### Get the widget
-GET `/widgets/subscribe?token=12345&organizationId=your-org-id` where `your-org-id` is the organization you want to show lines for.  The widget will allow users to subscribe to any of the lines for that organization.
+GET `/widgets/show-org?token=12345&organizationId=your-org-id` where `your-org-id` is the organization you want to show lines for.  The widget will allow users to subscribe to any of the lines for that organization.
 
 ### Widget Functionality
 #### "Reserve"
